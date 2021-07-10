@@ -6,7 +6,6 @@ import ScrollDownLink from './ScrollDownLink';
 import backgroundImage from '../public/assets/background.png';
 import katarinaImage from '../public/assets/katarina.png';
 import missFortuneImage from '../public/assets/miss-fortune.png';
-import appImage from '../public/assets/app.gif';
 import logoImage from '../public/assets/logo.svg';
 import cloudsImage from '../public/assets/clouds.png';
 
@@ -55,12 +54,10 @@ export default function Hero({
         />
       </div>
       <div className={styles.demo}>
-        <Image
-          src={appImage}
-          alt="Trophy Hunter Demonstration"
-          layout="fill"
-          objectFit="contain"
-        />
+        <video autoPlay loop muted playsInline>
+          <source src="/assets/app.webm" type="video/webm" />
+          <source src="/assets/app.mp4" type="video/mp4" />
+        </video>
       </div>
       <div className={styles.message}>
         <Image src={logoImage} alt="Trophy Hunter" />

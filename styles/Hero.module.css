@@ -51,6 +51,11 @@
   transform: translateZ(-0.5px) scale(1.5);
 }
 
+.demo video {
+  height: 100%;
+  width: 100%;
+}
+
 .message {
   composes: absoluteBottom;
   top: 0;
