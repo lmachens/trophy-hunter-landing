@@ -1,3 +1,10 @@
+:root {
+  --z-index-background: -10;
+  --z-index-message: 10;
+  --z-index-characters: 20;
+  --z-index-clouds: 30;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +20,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

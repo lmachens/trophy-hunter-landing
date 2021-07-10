@@ -1,0 +1,33 @@
+.link {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  z-index: 500;
+  width: 4em;
+  height: 4em;
+  padding: 1em;
+  color: #eee;
+  display: grid;
+  place-items: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.arrow {
+  margin-top: 1em;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  from,
+  to {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20%);
+  }
+}
