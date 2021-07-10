@@ -1,0 +1,5 @@
+.about {
+  padding: 1em;
+  display: grid;
+  place-items: center;
+}

@@ -5,6 +5,7 @@ import useScrolled from '../hooks/useScrolled';
 import Features from '../components/Features';
 import Steps from '../components/Steps';
 import Download from '../components/Download';
+import About from '../components/About';
 
 export default function Home() {
   const { scrolled, elementRef } = useScrolled({ threshold: 200 });
@@ -23,6 +24,7 @@ export default function Home() {
       <Features />
       <Steps />
       <Download />
+      <About />
     </div>
   );
 }
