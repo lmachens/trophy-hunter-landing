@@ -1,7 +1,10 @@
 :root {
-  --color-text: #eee;
+  --color-primary: #eee;
+  --color-secondary: #eee;
+  --color-ternary: #111;
   --color-background-primary: #101010;
   --color-background-secondary: #2b2a30;
+  --color-background-ternary: #eee;
 
   --z-index-background: -10;
   --z-index-message: 10;
@@ -16,7 +19,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: var(--color-background-primary);
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 a {

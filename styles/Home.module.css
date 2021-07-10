@@ -9,5 +9,11 @@
 }
 
 .container > section:nth-child(3) {
+  color: var(--color-secondary);
   background: var(--color-background-secondary);
+}
+
+.container > section:nth-child(4) {
+  color: var(--color-ternary);
+  background: var(--color-background-ternary);
 }
