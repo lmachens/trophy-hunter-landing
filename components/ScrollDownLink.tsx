@@ -4,12 +4,18 @@ import styles from '../styles/ScrollDownLink.module.css';
 export default function ScrollDownLink({
   hidden,
   href,
+  label,
 }: {
   hidden: boolean;
   href: string;
+  label: string;
 }) {
   return (
-    <a href={href} className={`${styles.link} ${hidden && styles.hidden}`}>
+    <a
+      href={href}
+      className={`${styles.link} ${hidden && styles.hidden}`}
+      aria-label={label}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"

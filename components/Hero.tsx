@@ -71,7 +71,11 @@ export default function Hero({
         </p>
         <DownloadLink />
       </div>
-      <ScrollDownLink href="#features" hidden={hideScrollDownLink} />
+      <ScrollDownLink
+        label="Features"
+        href="#features"
+        hidden={hideScrollDownLink}
+      />
     </section>
   );
 }
