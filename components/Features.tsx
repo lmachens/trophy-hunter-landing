@@ -11,12 +11,12 @@ export default function Features() {
       <h2>Features</h2>
       <div className={styles.flex}>
         <article className={styles.card}>
-          <Image src={trophiesImage} alt="" />
+          <Image src={trophiesImage} alt="" width={202} height={175} />
           <h3>Trophies</h3>
           <p>Unlock over 200 unique trophies across several categories</p>
         </article>
         <article className={styles.card}>
-          <Image src={liveProgressImage} alt="" />
+          <Image src={liveProgressImage} alt="" width={202} height={175} />
           <h3>Live Progress Bar</h3>
           <p>
             Focus on your favorite trophies with a real-time tracker that
@@ -24,7 +24,7 @@ export default function Features() {
           </p>
         </article>
         <article className={styles.card}>
-          <Image src={challengeIslandImage} alt="" />
+          <Image src={challengeIslandImage} alt="" width={202} height={175} />
           <h3>Challenge Islands</h3>
           <p>
             Complete challenges to unlock epic islands – each adding new
