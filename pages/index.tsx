@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Hero from '../components/Hero';
 import styles from '../styles/Home.module.css';
 import useScrolled from '../hooks/useScrolled';
+import Features from '../components/Features';
 
 export default function Home() {
   const { scrolled, elementRef } = useScrolled({ threshold: 200 });
@@ -17,8 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero hideScrollDownLink={scrolled} />
-      {/* Empty container to test parallax effect */}
-      <div id="features" style={{ height: '300vh' }} />
+      <Features />
     </div>
   );
 }

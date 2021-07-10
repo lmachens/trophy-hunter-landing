@@ -1,0 +1,30 @@
+.section {
+  padding: 4em 2em;
+  display: grid;
+  place-items: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex > :not(:first-child) {
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.card {
+  display: grid;
+  max-width: 330px;
+  justify-items: center;
+  align-content: end;
+}
+
+.card h3,
+.card p {
+  margin: 0;
+  margin-top: 0.5em;
+}
