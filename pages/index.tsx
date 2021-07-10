@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import styles from '../styles/Home.module.css';
 import useScrolled from '../hooks/useScrolled';
 import Features from '../components/Features';
+import Steps from '../components/Steps';
 
 export default function Home() {
   const { scrolled, elementRef } = useScrolled({ threshold: 200 });
@@ -19,6 +20,7 @@ export default function Home() {
       </Head>
       <Hero hideScrollDownLink={scrolled} />
       <Features />
+      <Steps />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 :root {
   --color-text: #eee;
   --color-background-primary: #101010;
+  --color-background-secondary: #2b2a30;
 
   --z-index-background: -10;
   --z-index-message: 10;

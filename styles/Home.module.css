@@ -7,3 +7,7 @@
   transform-style: preserve-3d;
   scroll-behavior: smooth;
 }
+
+.container > section:nth-child(3) {
+  background: var(--color-background-secondary);
+}
