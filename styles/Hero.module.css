@@ -41,7 +41,7 @@
 
 .demo {
   composes: absoluteBottom;
-  height: 44%;
+  height: 52%;
   margin: 0 auto;
   width: 90%;
   transform: translateZ(-0.5px) scale(1.5);
