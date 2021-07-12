@@ -7,10 +7,6 @@
 
 .hero {
   height: 100vh;
-  overflow: hidden;
-  position: relative;
-  display: grid;
-  place-items: center;
 }
 
 .background {

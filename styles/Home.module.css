@@ -4,8 +4,16 @@
   overflow-y: auto;
   perspective: 1px;
   perspective-origin: bottom;
-  transform-style: preserve-3d;
   scroll-behavior: smooth;
+}
+
+.container > section {
+  transform-style: preserve-3d;
+}
+
+.container > section:nth-child(2) {
+  color: var(--color-primary);
+  background-color: var(--color-background-primary);
 }
 
 .container > section:nth-child(3) {
