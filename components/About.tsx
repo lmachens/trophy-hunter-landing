@@ -9,7 +9,11 @@ export default function About() {
         <a href="https://www.overwolf.com/" target="_blank" rel="noreferrer">
           Overwolf
         </a>{' '}
-        | Compliant with Riot&apos;s ToS
+        by{' '}
+        <a href="https://leon.machens.koeln/" target="_blank" rel="noreferrer">
+          Leon Machens
+        </a>{' '}
+        | No Cross-Site trackers and other creepy things
       </small>
     </footer>
   );
