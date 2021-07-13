@@ -14,11 +14,6 @@ export default function Home() {
     <div className={styles.container} ref={elementRef}>
       <Head>
         <title>Trophy Hunter for League of Legends</title>
-        <meta
-          name="description"
-          content="Spice up your League of Legends experience with an epic journey full of fun challenges and trophies to unlock"
-        />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero hideScrollDownLink={scrolled} />
       <Features />
