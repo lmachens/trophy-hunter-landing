@@ -56,5 +56,5 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           secrets: |
-            NEXT_PUBLIC_PLAUSIBLE_HOST=${{ secrets.NEXT_PUBLIC_PLAUSIBLE_HOST }}
-            NEXT_PUBLIC_PLAUSIBLE_DOMAIN=${{ secrets.NEXT_PUBLIC_PLAUSIBLE_DOMAIN }}
+            "NEXT_PUBLIC_PLAUSIBLE_HOST=${{ secrets.NEXT_PUBLIC_PLAUSIBLE_HOST }}"
+            "NEXT_PUBLIC_PLAUSIBLE_DOMAIN=${{ secrets.NEXT_PUBLIC_PLAUSIBLE_DOMAIN }}"
