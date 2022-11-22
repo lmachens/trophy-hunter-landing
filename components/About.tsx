@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
+import { trackOutboundLinkClick } from '../hooks/useStats';
 import styles from '../styles/About.module.css';
 
 export default function About() {
@@ -7,11 +8,19 @@ export default function About() {
     <footer className={styles.about}>
       <small>
         Built on{' '}
-        <a href="https://www.overwolf.com/" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.overwolf.com/"
+          target="_blank"
+          onClick={() => trackOutboundLinkClick('https://www.overwolf.com/')}
+        >
           Overwolf
         </a>{' '}
         by{' '}
-        <a href="https://leon.machens.koeln/" target="_blank" rel="noreferrer">
+        <a
+          href="https://leon.machens.koeln/"
+          target="_blank"
+          onClick={() => trackOutboundLinkClick('https://leon.machens.koeln/')}
+        >
           Leon Machens
         </a>{' '}
         | No Cross-Site trackers and other creepy things
@@ -22,6 +31,7 @@ export default function About() {
           href="https://www.aeternum-map.gg/"
           title="Interactive map for New World"
           target="_blank"
+          onClick={() => trackOutboundLinkClick('https://www.aeternum-map.gg/')}
         >
           Aeternum Map
         </a>{' '}
@@ -30,6 +40,7 @@ export default function About() {
           href="https://www.arkesia.gg/"
           title="Interactive map for Lost Ark"
           target="_blank"
+          onClick={() => trackOutboundLinkClick('https://www.arkesia.gg/')}
         >
           Arkesia.gg
         </a>{' '}
@@ -38,6 +49,7 @@ export default function About() {
           href="https://www.soc.gg/"
           title="A Songs of Conquest fansite"
           target="_blank"
+          onClick={() => trackOutboundLinkClick('https://www.soc.gg/')}
         >
           SoC.gg
         </a>{' '}
@@ -46,6 +58,9 @@ export default function About() {
           href="https://github.com/lmachens/skeleton"
           title="Simply display any website as customizable Overlay"
           target="_blank"
+          onClick={() =>
+            trackOutboundLinkClick('https://github.com/lmachens/skeleton')
+          }
         >
           Skeleton
         </a>
