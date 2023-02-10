@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React from 'react';
 import { trackOutboundLinkClick } from '../hooks/useStats';
 import styles from '../styles/About.module.css';
 
@@ -28,10 +27,19 @@ export default function About() {
       <small>
         More Projects:{' '}
         <a
-          href="https://www.aeternum-map.gg/"
+          href="https://www.hogwarts.gg/"
+          title="Hogwarts Legacy Fansite"
+          target="_blank"
+          onClick={() => trackOutboundLinkClick('https://www.hogwarts.gg/')}
+        >
+          Hogwarts.gg
+        </a>{' '}
+        |{' '}
+        <a
+          href="https://aeternum-map.gg/"
           title="Interactive map for New World"
           target="_blank"
-          onClick={() => trackOutboundLinkClick('https://www.aeternum-map.gg/')}
+          onClick={() => trackOutboundLinkClick('https://aeternum-map.gg/')}
         >
           Aeternum Map
         </a>{' '}
